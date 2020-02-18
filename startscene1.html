@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+			<title>startscene</title>
+			<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+		<script 
+            src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"
+        ></script>
+	</head>
+	<body>
+		<a-scene>
+				<a-sky src="https://cdn.glitch.com/29844e0d-ea0d-4740-bc28-87122a6572dd%2Fncmap7-100.jpg?v=1582055686785"></a-sky>
+			
+			<!-- text -->
+				<a-text font="kelsonsans" 
+				 value="Click on a city to see the effects of sea level rise in 2050." 
+				 width="3" position="-0.5 3 -3" rotation="0 -10 0" color="#FF7B7B"> 
+			</a-text>
+			
+				<a-text font="kelsonsans" 
+				 value="Raleigh" 
+				 width="2" position="0.6 2.15 -3" rotation="0 -10 0" color="#FF7B7B">
+			<a-link href = "newraleigh.html" title = "My Homepage"
+                ></a-link> </a-text>
+			
+				<a-text font="kelsonsans" 
+				 value="Wilmington" 
+				 width="2" position="1.2 .6 -3" rotation="0 -10 0" color="#FF7B7B"></a-text>
+			
+			
+			 <a-entity position="0 0 0">
+    <a-camera id="camera">
+      <a-cursor color="#ffffff"></a-cursor>
+    </a-camera>
+  </a-entity>
+			
+		
+	
+		</a-scene>
+	</body>
+</html>
+	  <html>

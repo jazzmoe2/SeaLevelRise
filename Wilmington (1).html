@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	 <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+		<title>Wilmington</title>
+</head>
+
+<body>
+	 <a-scene>
+		 <a-sphere  radius="2.5" position="2 30 2" color="#FFDE22"></a-sphere>
+		 <a-light type="ambient" color="#FFFFFF"></a-light>
+		 <a-sky color="#CCFFFD"></a-sky>
+		 
+		 <!-- ocean stuff -->
+		 	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+			<script> AFRAME.registerPrimitive('a-ocean', {
+  			// Attaches the `ocean` component by default.
+			// Defaults the ocean to be parallel to the ground.
+					defaultComponents: {
+						ocean: {},
+    						rotation: {x: -90, y: 360, z: 0}
+  								},
+
+			// Maps HTML attributes to the `ocean` component's properties.
+  					mappings: {
+							width: '300',
+							depth: '400',
+    						density: '100',
+    						color: '#50DAF0',
+							opacity: '.2'
+							}
+					});</script>
+		
+			<a-ocean color="aqua" depth="100" width="100"></a-ocean>
+		
+		 
+		 <!-- west BUILDINGS -->
+		<a-box position="-13 0 4" scale="5 12 5" color="#7A7A7A"></a-box>
+		<a-box position="-15 0 9" scale="3 6 3" color="#7A7A7A"></a-box>
+		 <a-box position="-14 0 13.5" scale="4 13 4" color="#7A7A7A"></a-box>
+		 <a-box position="-15 0 19" scale="3 8 4" color="#585858"></a-box>
+		 <a-box position="-13 0 24" scale="3 9 3" color="#7A7A7A"></a-box>
+		
+		<!-- east BUILDINGS -->
+		<a-box position="13 0 4" scale="4 6 5" color="#7A7A7A"></a-box>
+		<a-box position="15 0 9" scale="3 9 3" color="#7A7A7A"></a-box>
+		 <a-box position="14 0 13.5" scale="4 10 4" color="#585858"></a-box>
+		 <a-box position="15 0 19" scale="3 8 4" color="#7A7A7A"></a-box>
+		 <a-box position="13 0 24" scale="3 12 3" color="#585858"></a-box>
+		 
+		 <!-- south BUILDINGS-->
+		 <a-box position="8 0 30" scale="1 9 1" color="#585858"></a-box>
+		<a-box position="6 0 30" scale="3 5 3" color="#585858"></a-box>
+		 <a-box position="1.5 0 30" scale="4 7 4" color="#7A7A7A"></a-box>
+		 <a-box position="-2 0 30" scale="2.2 8 2" color="#7A7A7A"></a-box>
+		 <a-box position="-6 0 30" scale="3 8 3" color="#7A7A7A"></a-box>
+		 
+		 <!-- trees/park place (south) -->
+     	 <a-cylinder position="-3 0 10" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		
+		 <a-cylinder position="-3 0 7" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		 
+		  <a-cylinder position="3 0 7" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		 
+		  <a-cylinder position="3 0 10" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		 
+		  <a-cylinder position="-3 0 4" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		 
+		  <a-cylinder position="3 0 4" radius=".1" height="1.3" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".5 1.6 .5" color="#7BB22C"></a-box></a-cylinder>
+		 
+		 <!-- boardwalk fence -->
+		 <a-cylinder position="-23 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-21 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-19 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-17 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-15 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-13 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-11 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-9 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-7 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-5 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-3 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="-1 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="1 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="3 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="5 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="7 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="9 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="11 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="13 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="15 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="17 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="19 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="21 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 <a-cylinder position="23 0 -6" radius=".1" height=".5" color="#836E5F"></a-cylinder>
+		 
+		 <!-- trees across the river -->
+		 <a-box position="0 -4 -200" scale="300 2 4" color="#7BB22C"></a-box>
+		 <a-box position="-300 -9 -200" scale="300 2 4" rotation="0 0 2" color="#7BB22C"></a-box>
+		 <a-box position="300 -9 -200" scale="300 2 4" rotation="0 0 -2" color="#7BB22C"></a-box>
+		 
+		<!-- text -->
+		 <a-text font="kelsonsans" value="Battleship Park and North Carolina Battleship Site" width="200" position="-50 20 -200"
+                  rotation="0 0 0" color="#FF7B7B"></a-text>
+		 <a-text font="kelsonsans" value="Downtown Wilmington and Market St." width="3" position="1 2 4"
+                  rotation="180 0 180" color="#FF7B7B"></a-text>
+		 <a-text font="kelsonsans" 
+				 value="In 2050, most of the low-lying land in Wilmington will be underwater, decreasing property value. Tidal and storm surge flooding will become more frequent and will have greater effects. Beach area will decrease, threatening coastal houses and decreasing property value. Currently, 119,000 people live in Wilmington, and some of this population will relocate to other areas due to rising sea level." 
+				 width="3" position="-3 1.5 2" rotation="0 100 0" color="#FF7B7B"></a-text>
+		  	
+</body>
+</html>

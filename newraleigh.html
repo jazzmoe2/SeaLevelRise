@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+	  <title>Raleigh</title>
+  </head>
+  <body>
+	 
+    <a-scene>
+		 <a-sphere  radius="2.5" position="2 30 2" color="#FFDE22"></a-sphere>
+			
+
+		<a-sky src="#9CFFFC"></a-sky>
+		
+		<!--trees-->
+      <a-cylinder position="-3 0 -4" radius=".09" height="1.7" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale=".7 1.6 .7" color="#78AA5F"> </a-box></a-cylinder>
+		
+		<a-cylinder position="-6 0 -6" radius=".1" height="1.4" color="#AE5C17"> 
+		<a-box position="-.05 1.4 0" scale=".5 1.6 .5" color="#7BB22C"> </a-box></a-cylinder>
+		
+		<a-cylinder position="4 0 4" radius=".2" height="1.4" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale="1 1.6 1" color="#3D9510"> </a-box></a-cylinder>
+		
+			<a-cylinder position="4 0 -4" radius=".2" height="1.4" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale="1 1.6 1" color="#7BB22C"> </a-box></a-cylinder>
+		
+		<a-cylinder position="2 0 -5" radius=".2" height="1.4" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale="1 1.6 1" color="#3D9510"> </a-box></a-cylinder>
+		
+		<a-cylinder position="-4 0 5" radius=".2" height="1.4" color="#AE5C17"> 
+		<a-box position="0 1.4 0" scale="1 1.6 1" color="#78AA5F"> </a-box></a-cylinder>
+		
+		
+	<!-- south BUILDINGS-->
+		 <a-box position="8 0 8" scale="1 17 1" color="#585858"></a-box>
+		<a-box position="6 0 10" scale="3 20 3" color="#585858"></a-box>
+		 <a-box position="1.5 0 10" scale="4 11 4" color="#7A7A7A"></a-box>
+		 <a-box position="-2 0 8" scale="2.2 16 2" color="#7A7A7A"></a-box>
+		 <a-box position="-6 0 9" scale="3 18 3" color="#7A7A7A"></a-box>
+		
+	<!-- north BUILDINGS -->
+		<a-box position="8 0 -8" scale="1 17 1" color="#585858"></a-box>
+		<a-box position="6 0 -10" scale="3 20 3" color="#585858"></a-box>
+		 <a-box position="1.5 0 -10" scale="4 11 4" color="#7A7A7A"></a-box>
+		 <a-box position="-2 0 -8" scale="2.2 16 2" color="#585858"></a-box>
+		 <a-box position="-6 0 -9" scale="3 18 3" color="#7A7A7A"></a-box>
+		
+	<!-- west BUILDINGS -->
+		<a-box position="-13 0 -10" scale="4 17 5" color="#7A7A7A"></a-box>
+		<a-box position="-15 0 -5" scale="3 20 3" color="#7A7A7A"></a-box>
+		 <a-box position="-14 0 -.5" scale="4 11 4" color="#7A7A7A"></a-box>
+		 <a-box position="-15 0 5" scale="3 16 4" color="#585858"></a-box>
+		 <a-box position="-13 0 10" scale="3 18 3" color="#7A7A7A"></a-box>
+		
+	<!-- east BUILDINGS -->
+		<a-box position="13 0 -10" scale="4 17 5" color="#7A7A7A"></a-box>
+		<a-box position="15 0 -5" scale="3 20 3" color="#7A7A7A"></a-box>
+		 <a-box position="14 0 -.5" scale="4 11 4" color="#585858"></a-box>
+		 <a-box position="15 0 5" scale="3 16 4" color="#7A7A7A"></a-box>
+		 <a-box position="13 0 10" scale="3 18 3" color="#585858"></a-box>
+		
+	<!-- west ROAD -->
+		
+		<a-box position="-8.4 .1 0" scale="1.4 .1 40" color="#2D2D2D"> </a-box>
+	
+	<!-- East road--> 
+		<a-box position="9.3 .1 0" scale="1.4 .1 40" color="#2D2D2D"> </a-box>
+		
+	<!--THE GROUND-->
+		<a-plane position="0 0 -4" rotation="-90 0 0" width="25" height="26" color="#AABA93"></a-plane>	
+		
+  <!-- west cars--> 
+		<a-gltf-model position="-8 .5 15" scale=".3 .3 .3" rotation="0 0 0" src="https://cdn.glitch.com/29844e0d-ea0d-4740-bc28-87122a6572dd%2Fcar.glb?v=1581964967987" animation="property: object3D.position.z; to: -15; dir: forward; dur: 10000; loop: true"></a-gltf-model>
+		<a-gltf-model position="-8 .5 20" scale=".3 .3 .3" rotation="0 0 0" src="https://cdn.glitch.com/29844e0d-ea0d-4740-bc28-87122a6572dd%2Fcar.glb?v=1581964967987" animation="property: object3D.position.z; to: -10; dir: forward; dur: 10000; loop: true"></a-gltf-model>
+
+	<!-- east cars -->
+		<a-gltf-model position="9 .5 -15" scale=".3 .3 .3" rotation="0 180 0" src="https://cdn.glitch.com/29844e0d-ea0d-4740-bc28-87122a6572dd%2Fcar.glb?v=1581964967987" animation="property: object3D.position.z; to: 15; dir: forward; dur: 10000; loop: true"></a-gltf-model>
+		<a-gltf-model position="9 .5 -10" scale=".3 .3 .3" rotation="0 180 0" src="https://cdn.glitch.com/29844e0d-ea0d-4740-bc28-87122a6572dd%2Fcar.glb?v=1581964967987" animation="property: object3D.position.z; to: 20; dir: forward; dur: 10000; loop: true"></a-gltf-model>
+      
+	
+<!-- street sign-->
+		<a-cylinder radius=".08" height="4" position="7 .6 -5" color="#AF7A2D"> </a-cylinder>
+		<a-box scale="2 .4 .1" position="8 2.4 -5" color="#2BAB67"> </a-box>
+					
+		
+		<a-cylinder radius=".08" height="4" position="-7 .6 -5" color="#AF7A2D"> </a-cylinder>
+		<a-box scale="2 .4 .1" position="-8 2.4 -5" color="#2BAB67"> </a-box>
+		
+		
+		<!-- text -->
+		
+		<a-text font="kelsonsans" value="S. Person St." width="5" position="8.7 2.4 -5.2"
+				
+                  rotation="0 180 0" color="#FFFFFF"></a-text>
+		
+		<a-text font="kelsonsans" value="S. Person St." width="5" position="7.2 2.4 -4.9"
+				
+                  rotation="0 360 0" color="#FFFFFF"></a-text>
+		
+		<a-text font="kelsonsans" value="S. Blount St." width="5" position="-8.6 2.4 -4.9"
+                  rotation="5 360 0" color="#FFFFFF"></a-text>
+		
+		<a-text font="kelsonsans" 
+				 value="In 2050, life continues as normal in Raleigh. However, population growth from environmental refugees has created more competition for jobs, higher housing prices, and pressure on infrastructure." 
+				 width="3" position="-2.5 2.5 -2" rotation="0 20 0" color="#FF7B7B"></a-text>
+		
+    </a-scene>
+  </body>
+</html>
